@@ -4,7 +4,7 @@ package com.csc205.project1;
 public class Pointt {
 
     double x;
-    double y;// declare variables
+    double y;
     private Pointt p;
 
     public Pointt() {
@@ -12,16 +12,11 @@ public class Pointt {
 
     public Pointt(double x, double y) {
         this.x = x;
-        this.y = y;
-    }
-
-    // calculate distance to point 2
+        this.y = y;}
     public double distance(Pointt p) {
         this.p = p;
         return Math.sqrt(Math.pow(p.getY() - this.getY(), 2) + Math.pow(p.getX() - this.getX(), 2));
-
     }
-
     public double getX() {
         return x;
     }
